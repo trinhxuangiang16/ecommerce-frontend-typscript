@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import categories from "./categories/categorySlice";
 import products from "./products/productsSlice";
+import cart from "./cart/cartSlice";
 
 export const store = configureStore({
-  reducer: { categories, products },
+  reducer: { categories, products, cart },
 });
 
 //Định nghĩa kiểu dữ liệu cho 2 cái này
