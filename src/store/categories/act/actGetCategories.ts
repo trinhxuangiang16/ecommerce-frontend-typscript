@@ -9,9 +9,7 @@ export const actGetCategories = createAsyncThunk(
   "categories/actGetCategories",
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get<TResponse>(
-        "http://localhost:5005/categories"
-      );
+      const response = await axios.get<TResponse>("categories");
 
       return response.data;
     } catch (error) {

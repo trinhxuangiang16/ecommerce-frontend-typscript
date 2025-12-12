@@ -5,6 +5,7 @@ interface ICartSate {
   items: { [key: number]: number };
   productFullInfo: TProduct[];
 }
+
 const initialState: ICartSate = {
   items: {},
   productFullInfo: [],

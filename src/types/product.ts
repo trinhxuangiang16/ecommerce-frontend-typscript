@@ -3,6 +3,7 @@ export type TProduct = {
   title: string;
   cat_prefix?: string;
   img: string;
-  price: string;
+  price: number;
+  max: number;
   quantity?: number;
 };
